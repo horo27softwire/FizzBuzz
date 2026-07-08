@@ -1,8 +1,8 @@
 // Your file can be named fizzbuzz.test.ts or index.test.ts
 
 import expect from 'expect';
-import { applyRules } from './index';
 import {
+    applyRules,
     division_11_rule,
     division_13_rule,
     division_17_rule,

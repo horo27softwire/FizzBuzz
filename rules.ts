@@ -1,5 +1,20 @@
 export type Rule = (currentNumber : number, result: string[]) => void;
 
+export function applyRules(currentNumber: number, allowedRules: Rule[]): string {
+    let result: string[] = []
+
+    for (let currentRule of allowedRules){
+        currentRule(currentNumber, result);
+    }
+
+    if (result.length) {
+        return result.join("");
+    }
+    else{
+        return currentNumber.toString();
+    }
+}
+
 export function division_3_rule(currentNumber : number, result : string[]): void{
     if (currentNumber % 3 === 0) {
         result.push("Fizz");
