@@ -1,6 +1,9 @@
 {
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "@types/readline-sync": "^1.4.8",
+    "jest": "^30.4.2",
+    "ts-jest": "^29.4.11",
     "typescript": "^6.0.3"
   },
   "dependencies": {
@@ -12,7 +15,7 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --config=jest.config.js"
   },
   "repository": {
     "type": "git",
